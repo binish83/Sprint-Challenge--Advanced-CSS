@@ -12,3 +12,29 @@
     margin-left: 20px;
 
 }
+
+/*.btn(@justify,@align){
+    display:flex;
+    justify-content:@justify;
+    align-items:@align;
+}
+
+.btn(){
+    .btn-layout(flex-end,center)*/
+
+
+ .custom-btn(@width:90px, @bgColor:black, @fontColor:white){
+        
+            background-color: @bgColor;
+            color: @fontColor;
+            width: @width;
+            border-radius: 4px;
+            height:30px; 
+            text-align: center;
+
+            &:hover{
+                background-color: @fontColor;
+                color: @bgColor; 
+            }
+          
+    }
