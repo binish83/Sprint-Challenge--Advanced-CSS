@@ -269,6 +269,11 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
 }
@@ -298,8 +303,14 @@ footer {
   width: 46%;
   margin-left: 4%;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    width: 100%;
+    margin: auto;
+  }
+}
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
