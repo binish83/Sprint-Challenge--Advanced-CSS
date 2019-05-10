@@ -16,7 +16,6 @@ h1 {
   margin: auto;
 }
 .top-content {
-  background-color: lightblue;
   margin-left: 50px;
 }
 nav {
@@ -62,6 +61,9 @@ h4,
 h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
+}
+h1 {
+  font-size: 4rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -127,10 +129,14 @@ p {
   border-radius: 4px;
   height: 30px;
   text-align: center;
+  font-size: 1.5rem;
+  display: table-cell;
+  vertical-align: middle;
 }
 .home .walk .walk-text .btn:hover {
   background-color: white;
   color: black;
+  border: 2px solid black;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -141,11 +147,3 @@ p {
   height: auto;
   border-radius: 10px;
 }
-/*.btn(@justify,@align){
-    display:flex;
-    justify-content:@justify;
-    align-items:@align;
-}
-
-.btn(){
-    .btn-layout(flex-end,center)*/

@@ -1,40 +1,36 @@
-// Mixins Here
+// Regular Mixins Here
 .center(){
     display:flex;
     justify-content:center;
     align-items:center;
 }
-   
 
+.auto-margin(){
+    margin:auto;
+}
 
 .margin-rl(){
     margin-right: 20px;
     margin-left: 20px;
-
 }
 
-/*.btn(@justify,@align){
-    display:flex;
-    justify-content:@justify;
-    align-items:@align;
-}
-
-.btn(){
-    .btn-layout(flex-end,center)*/
-
-
- .custom-btn(@width:90px, @bgColor:black, @fontColor:white){
+//Parametric Mixins Button Style with Hover
+.custom-btn(@width:90px, @bgColor:black, @fontColor:white){
         
-            background-color: @bgColor;
-            color: @fontColor;
-            width: @width;
-            border-radius: 4px;
-            height:30px; 
-            text-align: center;
+    background-color: @bgColor;
+    color: @fontColor;
+    width: @width;
+    border-radius: 4px;
+    height:30px; 
+    text-align: center;
+    font-size:1.5rem;
+    display: table-cell;
+    vertical-align: middle;
 
-            &:hover{
-                background-color: @fontColor;
-                color: @bgColor; 
-            }
-          
+    &:hover{
+        background-color: @fontColor;
+        color: @bgColor; 
+        border: 2px solid black;
     }
+  
+}
