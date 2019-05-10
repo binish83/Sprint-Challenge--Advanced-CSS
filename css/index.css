@@ -271,6 +271,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk {
     flex-direction: column-reverse;
+    margin: 0px;
   }
 }
 .home .walk .walk-text {
@@ -305,10 +306,10 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
-    border: 1px solid red;
-    height: 5rem;
+    height: 6rem;
     width: 600rem;
     max-width: 500px;
+    background-color: #23293B;
   }
 }
 .home .walk .walk-img {
