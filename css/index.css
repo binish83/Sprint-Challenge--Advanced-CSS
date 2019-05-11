@@ -193,9 +193,6 @@ a {
   margin-left: 20px;
   color: black;
 }
-img {
-  padding-top: 20px;
-}
 @media (max-width: 500px) {
   img {
     width: 500px;
@@ -223,13 +220,18 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+.home .space-images img {
+  border-radius: 20px;
+}
 @media (max-width: 500px) {
   .home .space-images {
     flex-direction: column;
   }
 }
-.home .space-images .sky {
-  border-bottom: 1px solid red;
+@media (max-width: 500px) {
+  .home .space-images .blast {
+    height: auto;
+  }
 }
 @media (max-width: 500px) {
   .home .space-images .sky {
@@ -325,5 +327,6 @@ footer {
 .home .walk .walk-img img {
   width: 100%;
   height: auto;
-  border-radius: 1rem;
+  border-radius: 20px;
+  border: 1px solid red;
 }

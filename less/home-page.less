@@ -20,12 +20,23 @@
     flex-wrap: wrap;
     width: 100%;
 
+    img{
+      border-radius: 20px;
+    }
+
     @media @phone{
       flex-direction: column;
     }
 
+    .blast{
+
+      @media @phone{
+        height: auto;
+      }
+    }
+
     .sky{
-      border-bottom: 1px solid red;
+      
       
       @media @phone{
         display: none;
@@ -101,6 +112,7 @@
           width: 600rem;
           max-width:500px;
           background-color: @ebony-clay
+          
         }
       }
      
@@ -121,7 +133,8 @@
       img {
         width: 100%;
         height: auto;
-        border-radius:1rem;
+        border-radius:20px;
+        border: 1px solid red;
       }
     }
   }
